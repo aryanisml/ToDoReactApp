@@ -17,7 +17,14 @@ const AddTask = () => {
 
   return (
     <>
-      <div>
+      <div
+        style={{
+          height: "min-content",
+          padding: "10px",
+          margin: "10px",
+          background: "aqua"
+        }}
+      >
         <input
           type="text"
           value={item}

@@ -23,17 +23,19 @@ const TaskList = () => {
         item.task.length > 0 &&
         item.task.map((d, index) => (
           <>
-            <ul key={index + d}>
-              <li>
-                {d}
-                <button
-                  style={{ marginLeft: "1rem" }}
-                  onClick={(e) => removeHandler(e, index, d)}
-                >
-                  Remove
-                </button>
-              </li>
-            </ul>
+            <span style={{ padding: "5px", margin: "5px", background: "aqua" }}>
+              <ul key={index + d}>
+                <li>
+                  {d}
+                  <button
+                    style={{ marginLeft: "1rem" }}
+                    onClick={(e) => removeHandler(e, index, d)}
+                  >
+                    Remove
+                  </button>
+                </li>
+              </ul>
+            </span>
           </>
         ))}
     </>
