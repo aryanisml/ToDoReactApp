@@ -9,11 +9,12 @@ export default function App() {
         <h1>TODO APP using Context API </h1>
       </div>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          verticalAlign: "center"
-        }}
+      // style={{
+      //   display: "flex",
+      //   justifyContent: "center",
+      //   verticalAlign: "center",
+      //   flexDirection: "row"
+      // }}
       >
         <AddTask />
         <TaskList />

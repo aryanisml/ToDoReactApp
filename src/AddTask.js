@@ -17,12 +17,14 @@ const AddTask = () => {
 
   return (
     <>
-      <input
-        type="text"
-        value={item}
-        onChange={(e) => setItem(e.target.value)}
-      />
-      <button onClick={addHandler}> Add Task</button>
+      <div>
+        <input
+          type="text"
+          value={item}
+          onChange={(e) => setItem(e.target.value)}
+        />
+        <button onClick={addHandler}> Add Task</button>
+      </div>
     </>
   );
 };
